@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Route, Routes } from "react-router";
 import { Cart } from "./components/Cart";
 import BuyItem from "./components/BuyItem";
+import BuyNow from "./components/BuyNow";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/react_shopping_cart" element={<Home />} />
         <Route path="/" element={<Home />} />
+        <Route path="/buyNow" element={<BuyNow />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/buy" element={<BuyItem />} />
       </Routes>

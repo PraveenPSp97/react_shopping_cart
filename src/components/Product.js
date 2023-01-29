@@ -14,14 +14,14 @@ export const Product = ({ product }) => {
         className="mt-2"
       />
       <Card.Body>
-        <Link to="/cart">
+        <Link to="/buyNow" state={{ product }}>
           <Button
             variant="primary"
             className="buyNow"
             style={{ backgroundColor: "grey" }}
-            onClick={() => {
-              handleAddToCart(product);
-            }}
+            // onClick={() => {
+            //   handleAddToCart(product);
+            // }}
           >
             Buy Now
           </Button>
