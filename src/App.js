@@ -13,7 +13,8 @@ function App() {
       <NavBar />
 
       <Routes>
-        <Route path="/" exact element={<Home />} />
+        <Route path="/react_shopping_cart" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/buy" element={<BuyItem />} />
       </Routes>

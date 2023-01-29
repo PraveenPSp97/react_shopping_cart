@@ -9,7 +9,7 @@ export const NavBar = () => {
     <NavbarBs sticky="top" className="bg-white shadow-sm mb-3">
       <Container>
         <Nav className="me-auto">
-          <Nav.Link to="/" as={NavLink}>
+          <Nav.Link to="/react_shopping_cart" as={NavLink}>
             <h5>WeBuy</h5>
           </Nav.Link>
         </Nav>
