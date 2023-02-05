@@ -17,7 +17,7 @@ export const BuyProvider = ({ children }) => {
     const newCart = cartItems.filter((item) => item.id != id);
     setcartItems(newCart);
     localStorage.setItem("cartItems", JSON.stringify(newCart));
-    setcartCount((cartCount) => cartCount - 1);
+    setcartCount((cartCount) => newCart.length);
   };
   const handleAddToCart = (newCart) => {
     console.log("inside cart", newCart);
